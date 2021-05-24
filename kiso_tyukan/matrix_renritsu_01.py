@@ -25,14 +25,6 @@ A2 = A.det()
 
 # 最小正剰余
 A3 = A2 % mod
-"""
-if A2 < 0:
-    A3 = A2 + mod
-elif A2 < mod:
-    A3 = mod
-else:
-    A3 = A2 % mod
-"""
 
 # 行列の表示
 print('A =')
