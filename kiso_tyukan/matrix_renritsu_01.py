@@ -82,8 +82,6 @@ print('≡')
 a,b,c,d = A6
 print('[',a,',',b,']')
 print('[',c,',',d,'] (mod',mod,')')
-print()
-print()
 
 """
 E = A * A6
@@ -95,4 +93,15 @@ d %= mod
 E = sympy.Matrix([[a,b],[c,d]])
 print('検算：',A,'*',A6,'≡',E)
 """
+
+
+
+
+
+
+
+
+
+
+
 
