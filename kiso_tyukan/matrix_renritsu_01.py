@@ -41,9 +41,9 @@ print('[',c,',',d,']')
 print()
 
 A_1 = A.inv()
-a,b,c,d = A_1
-# #逆行列の表示
+# 逆行列の表示
 print('A**(-1) =')
+a,b,c,d = A_1
 print('[',a,',',b,']')
 print('[',c,',',d,']')
 print()
@@ -51,11 +51,16 @@ print()
 print('--------------------------------------------------')
 print('#',A3,'x ≡ 1 (mod',mod,')を解く')
 print('--------------------------------------------------')
+print()
 print('|A| =',A2,'≡',A3,'(mod)',mod) # 
 print()
 
 A4 = A2 * A_1
-print('A**(-1) ≡',A4,'より')
+# 逆行列の表示
+print('A**(-1) ≡より')
+a,b,c,d = A4
+print('[',a,',',b,']')
+print('[',c,',',d,']')
 print()
 
 x,y,t = sympy.gcdex(A3,mod)
@@ -66,11 +71,21 @@ b %= mod
 c %= mod
 d %= mod
 A6 = sympy.Matrix([[a,b],[c,d]])
-print('A**(-1) ≡',x,'*',A4)
-print('\t≡',A5)
-print('\t≡',A6,'(mod',mod,')')
+print('A**(-1) ≡',x,'*')
+print('[',a,',',b,']')
+print('[',c,',',d,']')
+print('≡')
+a,b,c,d = A5
+print('[',a,',',b,']')
+print('[',c,',',d,']')
+print('≡')
+a,b,c,d = A6
+print('[',a,',',b,']')
+print('[',c,',',d,'] (mod',mod,')')
+print()
 print()
 
+"""
 E = A * A6
 a,b,c,d = E
 a %= mod
@@ -79,3 +94,5 @@ c %= mod
 d %= mod
 E = sympy.Matrix([[a,b],[c,d]])
 print('検算：',A,'*',A6,'≡',E)
+"""
+
