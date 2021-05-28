@@ -49,10 +49,10 @@ print()
 
 A4 = A2 * A_1
 # 逆行列の表示
-print('A**(-1) ≡より')
+print('A**(-1) ≡')
 a,b,c,d = A4
 print('[',a,',',b,']')
-print('[',c,',',d,']')
+print('[',c,',',d,'] より')
 print()
 
 x,y,t = sympy.gcdex(A3,mod)
@@ -75,11 +75,6 @@ d %= mod
 # A6:求める逆行列
 A6 = sympy.Matrix([[a,b],[c,d]])
 a,b,c,d = A6
-print('[',a,',',b,']')
-print('[',c,',',d,'] (mod',mod,')')
-print()
-
-print('よって、求める逆行列は、')
 print('[',a,',',b,']')
 print('[',c,',',d,'] (mod',mod,')')
 print()
