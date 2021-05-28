@@ -21,14 +21,14 @@ mod = int(input('mod:'))
 print()
 
 A = sympy.Matrix([[a,b],[c,d]])
-A2 = A.det()
+A_det = A.det()
+A_inv = A.inv()
 
-A3 = A2 % mod
-A_1 = A.inv()
-A4 = A2 * A_1
+A_goudou = A_det % mod
+A_inv2 = A_det * A_inv
 
-x,y,t = sympy.gcdex(A3,mod)
-A5 = x * A4
+x,y,t = sympy.gcdex(A_goudou,mod)
+A5 = x * A_inv2
 
 a,b,c,d = A5
 a %= mod
