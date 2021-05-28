@@ -38,7 +38,7 @@ d %= mod
 
 # A6:求める逆行列
 A6 = sympy.Matrix([[a,b],[c,d]])
-a,b,c,d = A6
+# a,b,c,d = A6
 
 print('求めるx,yは、')
 B1 = sympy.Matrix([e,f])
@@ -56,7 +56,7 @@ print('[',f,']')
 a,b = B2
 a %= mod
 b %= mod
-B3 = sympy.Matrix([a,b])
+# B3 = sympy.Matrix([a,b])
 # print(B3)
 
 print('≡')
