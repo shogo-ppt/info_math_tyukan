@@ -19,8 +19,7 @@ if __name__ == '__main__':
     a,b,t = sympy.gcdex(a,n)
     # ここまで
     
-    print()
-    print('--------------------')
-    print('x ≡',a)
     elapsed_time = time.time() - start
     print('elapsed_time:{0}'.format(elapsed_time) + '[sec]')
+    print('--------------------')
+    print('x ≡',a)

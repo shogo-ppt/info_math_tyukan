@@ -30,8 +30,8 @@ if __name__ == '__main__':
         b = r
         i += 1
     # ここまで
-    
-    print('GCD=',a)
-    print()
+
     elapsed_time = time.time() - start
     print('elapsed_time:{0}'.format(elapsed_time) + '[sec]')
+    print()
+    print('GCD=',a)
